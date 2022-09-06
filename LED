@@ -1,4 +1,4 @@
---D8 builtin LED
+--D8 builtin LED1
 LIB_GpioOutputConfig("D8","STANDARD")
 --loop
 while(true)
