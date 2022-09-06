@@ -1,0 +1,9 @@
+--D8 builtin LED
+LIB_GpioOutputConfig("D8","STANDARD")
+--loop
+while(true)
+do
+    --delay 5000ms(5s), LED1 off
+    LIB_DelayMs(5000)  
+    LIB_GpioToggle("D8")
+end
