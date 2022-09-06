@@ -1,6 +1,6 @@
-Low Code Hacker Board Low Code Hacker Board (LCHB)
-==================================================
-It is a NO requirement and NO experience, super-low-code development board for those zero to expert within 10 minutes.
+Low Code Hacker Board (LCHB)
+============================
+LCHB is a NO requirement and NO experience, super-low-code development board for those zero to expert within 10 minutes.
 
 With compatible SDK and API, basic skill and low cost could develop a high-tech IOT devices or hacking tools (eg BadUSB).  
 It could also connect the IOT to the cloud platform with nearly zero-coding. 
