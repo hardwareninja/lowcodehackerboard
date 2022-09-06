@@ -1,0 +1,11 @@
+--设置CH9329模块占用TX0、RX0引脚，屏幕分辨率1920*1080
+LIB_CH9329Config("UART0",1920,1080)
+--开始大循环
+while(GC(1) == true)
+do
+    --每隔5秒让鼠标移动到屏幕上绝对坐标为(100,100)的位置，右击一下鼠标右键
+    --如果需要实现左键双击动作，请将RIGHT改为LEFT，SINGLE改为DOUBLE
+    --Win，Mac电脑用ABSOLUTE模式即可，一部分安卓电脑需要用RELATIVE模式
+    LIB_CH9329_MoveMouse("ABSOLUTE", 100, 100,"RIGHT","SINGLE")
+    LIB_DelayMs(5000)  
+end
