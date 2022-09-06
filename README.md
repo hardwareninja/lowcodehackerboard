@@ -1,4 +1,3 @@
-# lowcodehackerboard
 Low Code Hacker Board Low Code Hacker Board (LCHB)
 ==================================================
 It is a NO requirement and NO experience, super-low-code development board for those zero to expert within 10 minutes.
