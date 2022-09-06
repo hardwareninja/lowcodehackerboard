@@ -1,0 +1,17 @@
+--先配置USB口以USB键盘模式工作
+LIB_UsbConfig("KBD")
+--开始大循环
+while(GC(1) == true)
+do
+    LIB_DelayMs(5000)
+    --模拟键盘组合按键WIN+R调出运行界面效果
+    combine_tab = {"GUI","R"}
+    LIB_UsbKbdSend("COMBINE", combine_tab)LIB_DelayMs(200)
+    --模拟键盘输入notepad和回车键效果，来创建记事本文本文件
+    single_tab = {"N","O","T","E","P","A","D","ENTER"}
+    LIB_UsbKbdSend("SINGLE", single_tab)
+    LIB_DelayMs(500)
+    --模拟键盘在记事本文件上打出hello world..效果
+    single_tab = {"H","E","L","L","O","SPACEBAR","W","O","R","L","D","DOT","DOT"}
+    LIB_UsbKbdSend("SINGLE", single_tab)
+end
