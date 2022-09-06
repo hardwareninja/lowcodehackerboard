@@ -1,0 +1,18 @@
+--配置Core的USB接口以USB转串口模式工作,注意：配置成CDC_PD后print函数并不会打印输出到电脑上
+LIB_UsbConfig("CDC_PD")
+--开始大循环
+while(GC(1) == true)
+do
+    --如果Core和电脑通过USB线连好了，且电脑端打开了该串口
+    if LIB_UsbCommPortOpenQuery() == 1 then
+        --查询是否收到电脑发来的串口数据
+        recv_flag,recv_tab = LIB_UsbCdcRecv()
+        if recv_flag == 1 then
+            --将收到的数据每个都加1，再返送给电脑
+            for i = 1, #recv_tab do
+                recv_tab[i] = recv_tab[i] + 1
+            end
+            LIB_UsbCdcSend(recv_tab)
+        end
+    end
+end
