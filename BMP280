@@ -1,14 +1,13 @@
 LIB_UsbConfig("CDC")
---设置BMP280气压计传感器占用SCL0和SDA0引脚，并启动传感器以每秒输出26.32组数据的频率工作
+
 LIB_BMP280Config("IIC0")
---loop
+
 while(true)
 do
-    --每隔40毫秒查询一次传感器是否出数，也可以设置大于40毫秒的查询间隔时间，取决于您的应用需求
+    
     LIB_DelayMs(40)
     flag, temprature, pressure = LIB_BMP280GetResult()
-    if flag == 1 then --如果传感器此时有数据
-        --温度值保留两位小数，气压值去掉小数部分
+    if flag == 1 then
         print(string.format("temprature: %.2f pressure: %.0f Pa", temprature, pressure))
     end
 end
