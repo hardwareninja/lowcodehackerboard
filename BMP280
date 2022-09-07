@@ -8,6 +8,6 @@ do
     LIB_DelayMs(40)
     flag, temprature, pressure = LIB_BMP280GetResult()
     if flag == 1 then
-        print(string.format("temprature: %.2f pressure: %.0f Pa", temprature, pressure))
+        print(string.format("temperature: %.2f pressure: %.0f Pa", temperature, pressure))
     end
 end
