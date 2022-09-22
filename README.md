@@ -13,4 +13,6 @@ It supports WiFi, BLE, NB-OT, Lora, RFID, USB and RS485/232 channel.  More than 
 
 ![C2_MiNi](https://user-images.githubusercontent.com/112856241/191715631-69f52350-122c-4762-90ba-3ba434ef0941.png)
 
+![LCHB](https://user-images.githubusercontent.com/112856241/191716602-8fdbb21b-a207-4cb2-a8e4-7b1d11f2b7f5.jpg)
+
 The source code of PCB will be released in BHMEA2022
