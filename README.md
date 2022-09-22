@@ -11,3 +11,7 @@ Neither IDE nor Programing application is required.  It can be edited by a simpl
 
 It supports WiFi, BLE, NB-OT, Lora, RFID, USB and RS485/232 channel.  More than 30 type of detectors/sensors are applicable within ‘three-sentence’ command.  Beginner can handle logic with basic coding ‘if-then-else, loop &amp; function’.  It is a very small size development board but high efficiency.
 
+![C2_MiNi](https://user-images.githubusercontent.com/112856241/191715631-69f52350-122c-4762-90ba-3ba434ef0941.png)
+
+[C2_MiNi2.pdf](https://github.com/hardwareninja/lowcodehackerboard/files/9624477/C2_MiNi2.pdf)
+
