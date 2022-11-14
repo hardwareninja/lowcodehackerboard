@@ -44,7 +44,6 @@ class CmdHttpHandler(socketserver.BaseRequestHandler):
 def main():
     print("Listening on port: " + str(port))
     print("To close connection enter 'EXIT'")
-    print("The computer may be stalled by some commands, just try again")
     print()
 
     with socketserver.TCPServer(("0.0.0.0", port), CmdHttpHandler) as server:
